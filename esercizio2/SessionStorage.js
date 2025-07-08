@@ -13,6 +13,3 @@ bottoneStart.addEventListener("click", function () {
 bottoneStop.addEventListener("click", function () {
   clearInterval(timer);
 });
-if (secondi !== 0) {
-  secondi = sessionStorage.getItem(secondi);
-}
