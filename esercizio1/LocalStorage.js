@@ -3,7 +3,7 @@ const bottoneElimina = document.getElementById("elimina");
 const form = document.getElementById("form");
 const input = document.getElementById("input");
 const memoryKey = "name-memory";
-let array;
+let array = [];
 bottoneSalva.addEventListener("click", function () {
   const inputValue = input.value;
   localStorage.setItem(memoryKey, inputValue);
@@ -19,6 +19,8 @@ bottoneSalva.addEventListener("click", function () {
           </div>
         </div>
       </div>`;
+  array.push(input.value);
+  localStorage.setItem();
   input.value = " ";
 });
 bottoneElimina.addEventListener("click", function () {
